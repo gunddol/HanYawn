@@ -1,0 +1,323 @@
+/* Container */
+.container {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 64px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Drop Zone */
+.dropZone {
+  margin-bottom: 40px;
+  border-radius: 16px;
+  background: #f3f4f6;
+  border: 2px dashed #d1d5db;
+  padding: 64px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dropZone:hover {
+  border-color: #60a5fa;
+  background: #f9fafb;
+}
+
+.dropZoneDragging {
+  border-color: #3b82f6;
+  background: #eff6ff;
+  transform: scale(1.02);
+}
+
+.fileInput {
+  display: none;
+}
+
+.dropZoneContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.uploadIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.uploadIconSvg {
+  width: 32px;
+  height: 32px;
+  color: #4b5563;
+}
+
+.dropZoneTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+  margin: 0 0 6px 0;
+}
+
+.dropZoneSubtext {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Uploads Section */
+.uploadsSection {
+  margin-top: 40px;
+}
+
+.uploadsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.uploadsTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.uploadsCount {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Empty State */
+.emptyState {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 48px;
+  text-align: center;
+}
+
+.emptyIcon {
+  width: 48px;
+  height: 48px;
+  color: #9ca3af;
+  margin: 0 auto 16px;
+}
+
+.emptyText {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Files List */
+.filesList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fileCard {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.fileCard:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.fileCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.fileInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.fileIcon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fileIconSvg {
+  width: 24px;
+  height: 24px;
+  color: #4b5563;
+}
+
+.fileDetails {
+  flex: 1;
+  min-width: 0;
+}
+
+.fileName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111827;
+  margin: 0 0 4px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fileMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fileSize {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.metaSeparator {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.fileProgress {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.statusCompleted,
+.statusError {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.statusCompleted {
+  color: #059669;
+}
+
+.statusError {
+  color: #dc2626;
+}
+
+.statusIcon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Remove Button */
+.removeButton {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.removeButton:hover {
+  color: #dc2626;
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.removeIcon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Progress Bar */
+.progressBar {
+  margin-top: 16px;
+  height: 8px;
+  width: 100%;
+  border-radius: 9999px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
+
+/* Error Box */
+.errorBox {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.errorText {
+  font-size: 14px;
+  color: #991b1b;
+  margin: 0;
+}
+
+/* Document ID */
+.docId {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
