@@ -1,0 +1,17 @@
+# Core
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+jinja2==3.1.5
+pypdf==5.1.0
+
+# LangChain & RAG
+langchain==0.3.14
+langchain-community==0.3.14
+langchain-google-genai==2.0.8
+langchain-chroma==0.2.0
+
+# Force recent versions of common conflict sources
+grpcio==1.69.0
+protobuf==5.29.3
+google-api-core==2.24.0
